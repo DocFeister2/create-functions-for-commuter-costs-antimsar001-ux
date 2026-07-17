@@ -31,7 +31,7 @@ double toDollars(double commutes) {
  
       totalmiles = commutes * MILES_PER_COMMUTE; // calculates miles of commutes
   totalgas = totalmiles / MILES_PER_GALLON; //miles of commutes to gas used
-  totalcost = totalgas * DOLLARS_PER_GALLON;  //gas used to total cost of the trip
+  totalcost = totalgas * DOLLARS_PER_GALLON;  // total cost of gas fo the trip
   return totalcost;
 }
 
