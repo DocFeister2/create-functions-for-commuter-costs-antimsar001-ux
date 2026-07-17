@@ -23,12 +23,19 @@ double toCommutes(double gasDollars) {
 
 // TODO!
 // Converts number of commutes into gas cost
-/*
+
 double toDollars(double commutes) {
-  ....
+  double totalgas;
+  double totalmiles;
+  double totalcost;
+
+  totalgas = totalmiles / DOLLARS_PER_GALLON
+  totalmiles = commutes * MILES_PER_COMMUTE
+  totalcost = totalgas / DOLLARS_PER_GALLON
+
   return totalCost;
 }
-*/
+*
 
 int main() {
 
