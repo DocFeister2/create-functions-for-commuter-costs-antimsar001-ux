@@ -14,10 +14,10 @@ double toCommutes(double gasDollars) {
   double gasMiles;
   double numCommutes;
 
-  gasGallons = gasDollars / DOLLARS_PER_GALLON;
-  gasMiles = gasGallons * MILES_PER_GALLON;
-  numCommutes = gasMiles / DOLLARS_PER_GALLON; 
-
+  gasGallons = gasDollars / DOLLARS_PER_GALLON; //gas sollars to gallons
+  gasMiles = gasGallons * MILES_PER_GALLON; //gallons to miles
+  numCommutes = gasMiles / MILES_PER_COMMUTE; //miles to commute
+/* creates conversion factors */
   return numCommutes;
 }
 
@@ -28,10 +28,10 @@ double toDollars(double commutes) {
   double totalgas;
   double totalmiles;
   double totalcost;
-
-  totalgas = totalmiles / DOLLARS_PER_GALLON;
-  totalmiles = commutes * MILES_PER_COMMUTE;
-  totalcost = totalgas / DOLLARS_PER_GALLON;
+ 
+      totalmiles = commutes * MILES_PER_COMMUTE; // calculates miles of commutes
+  totalgas = totalmiles / MILES_PER_GALLON; //miles of commutes to gas used
+  totalcost = totalgas * DOLLARS_PER_GALLON;  //gas used to cost
   return totalcost;
 }
 
