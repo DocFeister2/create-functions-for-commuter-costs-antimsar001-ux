@@ -16,7 +16,7 @@ double toCommutes(double gasDollars) {
 
   gasGallons = gasDollars / DOLLARS_PER_GALLON;
   gasMiles = gasGallons * MILES_PER_GALLON;
-  numCommutes = gasMiles / DOLLARS_PER_GALLON; // TODO: That math is not right! Something is missing here...
+  numCommutes = gasMiles / DOLLARS_PER_GALLON; 
 
   return numCommutes;
 }
@@ -29,13 +29,12 @@ double toDollars(double commutes) {
   double totalmiles;
   double totalcost;
 
-  totalgas = totalmiles / DOLLARS_PER_GALLON
-  totalmiles = commutes * MILES_PER_COMMUTE
-  totalcost = totalgas / DOLLARS_PER_GALLON
-
-  return totalCost;
+  totalgas = totalmiles / DOLLARS_PER_GALLON;
+  totalmiles = commutes * MILES_PER_COMMUTE;
+  totalcost = totalgas / DOLLARS_PER_GALLON;
+  return totalcost;
 }
-*
+
 
 int main() {
 
