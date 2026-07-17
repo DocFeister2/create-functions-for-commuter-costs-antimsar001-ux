@@ -16,8 +16,7 @@ double toCommutes(double gasDollars) {
 
   gasGallons = gasDollars / DOLLARS_PER_GALLON;
   gasMiles = gasGallons * MILES_PER_GALLON;
-
-  numCommutes = gasMiles; // TODO: That math is not right! Something is missing here...
+  numCommutes = gasMiles / DOLLARS_PER_GALLON; // TODO: That math is not right! Something is missing here...
 
   return numCommutes;
 }
